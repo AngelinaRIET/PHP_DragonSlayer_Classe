@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #FDBB2D, #ffeeddae, #fff);
+    font-family: Montserrat;
+    min-height: 100vh;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.33);
+    border: 1px solid #FDBB2D;
+    border-radius: 6px;
+    padding-bottom: 1rem;
+}
+form h4 {
+    color: #FDBB2D;
+    margin: 2rem;
+    text-align: center;
+}
+form label:not(.form-check-label) {
+    color: #FDBB2D;
+    font-weight: 300;
+}
+
+h1 {
+    color: #1A2A6C;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}

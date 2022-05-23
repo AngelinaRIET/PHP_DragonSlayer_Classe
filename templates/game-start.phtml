@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Slayer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap"> 
+    <link rel="stylesheet" href="www/css/dragon-slayer.css">
+</head>
+<body class="container">
+    <h1><i class="fas fa-skull-crossbones"></i> Dragon Slayer <i class="fas fa-skull-crossbones"></i></h1>
+
+    <main class="d-flex justify-content-center">
+        <section class="col-md-12">
+            <!-- Boucle d'affichage de tous les messages cumulés du jeu dans des balises <p> -->
+                <?php foreach($game->tabMessage as $row){ ?>
+                    <p><?php echo $row; ?></p>
+                <?php } ?>
+                <?php foreach($game->tabImage as $row){ ?>
+                    <img src="www/images/<?php echo $row; ?>.png" />
+                <?php } ?>
+            <!-- Après la boucle, affichage de l'image du vainqueur -->
+        </section>
+    </main>
+</body>
+</html>

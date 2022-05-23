@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Slayer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap"> 
+    <link rel="stylesheet" href="www/css/dragon-slayer.css">
+</head>
+<body class="container">
+    <h1><i class="fas fa-skull-crossbones"></i> Dragon Slayer <i class="fas fa-skull-crossbones"></i></h1>
+
+    <main class="d-flex justify-content-center">
+        <form action="index.php" method="POST" class="col-md-6">
+            <h4>Menu de démarrage</h4>
+            <div class="form-group">
+                <label for="player-name">Indiquez votre nom :</label>
+                <input type="text" class="form-control" id="player-name" name="player-name" placeholder="Drax">
+            </div>
+            <div class="form-group">
+                <label for="player-type">Indiquez votre classe de personnage :</label>
+                <select class="form-control" id="player-type" name="player-type">
+                    <option value="ange">Ange</option>
+                    <option value="guerrier">Guerrier</option>
+                    <option value="magicien">Magicien</option>
+                </select>                
+            </div>
+            <div class="form-group">
+                <label for="difficulty-normal">Choisissez le niveau de difficulté :</label>
+                <div class="form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="difficulty" id="difficulty-easy" value="facile">
+                        <label class="form-check-label" for="difficulty-easy">Facile</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="difficulty" id="difficulty-normal" value="normal">
+                        <label class="form-check-label" for="difficulty-normal">Normal</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="difficulty" id="difficulty-hard" value="difficile">
+                        <label class="form-check-label" for="difficulty-hard">Difficile</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary"><i class="fas fa-dragon"></i> Démarrer le jeu</button>
+        </form>
+    </main>
+</body>
+</html>
